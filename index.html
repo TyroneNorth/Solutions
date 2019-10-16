@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ACE Consulting Engineers,Inc</title>
+  <title>Modern Consulting Engineers,Inc</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <style>
+  
 
-  body {
-      font-family: 'Lato', sans-serif;
-  }
-  </style>
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-    <img src="./assets/images/logo.._04.png" alt="ACE Consulting Engineers Banner" class="img-fluid">
-</div>
+    <div class="jumbotron text-center w3-display-container" style="margin-bottom:0">
+        <img src="./assets/images/logo-2078018_1280.png" alt="Modern Consulting Engineers Banner" style="width: 150px" class="img-fluid w3-opacity-max ">
+        <div class="w3-display-middle w3-xxlarge w3-text-black">Engineering Consulting, Inc</div>
+    </div>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="index.html"><img src="./assets/images/logo_small.png" alt="ACE Logo small variant" class="img-fluid" style="height: 40px"></a>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-2078018_1280.png" alt="Modern Logo small variant" class="img-fluid" style="height: 40px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -55,29 +51,29 @@
   
         <!-- Modal body -->
         <div class="modal-body">
-            <form action="submit()" id="myForm">
+            <form action="submit()" id="myForm" class="needs-validation">
                 <div class="form-group">
                   <label for="email">Email address:</label>
-                  <input type="email" class="form-control" id="email">
+                  <input type="email" class="form-control" id="email" required>
                 </div>
                 <div class="form-group">
                   <label for="fName">First name:</label>
-                  <input type="text" class="form-control" id="fName">
+                  <input type="text" class="form-control" id="fName" required>
                 </div>
                 <div class="form-group">
                   <label for="lName">Last name:</label>
-                  <input type="text" class="form-control" id="lName">
+                  <input type="text" class="form-control" id="lName" required>
                 </div>
                 <div class="form-group">
                   <label for="comment">Comment:</label>
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                  <textarea class="form-control" rows="5" id="comment" required></textarea>
                 </div>
                 <div class="form-group form-check">
                   <label class="form-check-label">
                     <input class="form-check-input" type="checkbox"> Request a callback
                   </label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" id='btn' onclick="submitF()">Submit</button>
             </form>
         </div>
   
@@ -99,15 +95,14 @@
           <hr class="d-sm-none">
         </div>
     <div class="col-sm-8">
-      <h2>ACE Consulting Engineers</h2>
+      <h2>Modern Consulting Engineers</h2>
       <img src="./assets/images/daniel-mccullough-HtBlQdxfG9k-unsplash.jpg" alt="Photo by Daniel McCullough on Unsplash" class="img-fluid">
-      <p>ACE Consulting</p>
-      <p>At ACE Consulting Engineers , Inc. our focus is YOU! We value our clients, and every project ends with a completely satisfied customer.
+      <p>Modern Consulting</p>
+      <p>At Modern Consulting Engineers , Inc. our focus is YOU! We value our clients, and every project ends with a completely satisfied customer.
 
-          ACE Consulting Engineers provides one of the fastest design turnaround times in the city of Houston. Our diligent staff understands the term 'deadline' and strives to meet your needs. more...</p>
+          Modern Consulting Engineers provides one of the fastest design turnaround times in the city of Houston. Our diligent staff understands the term 'deadline' and strives to meet your needs. more...</p>
       <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
+      <h2>CONTENT HEADING</h2>
       <img src="./assets/images/scott-blake-x-ghf9LjrVg-unsplash.jpg" alt="Photo by Scott Blake on Unsplash" class="img-fluid">
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -116,7 +111,7 @@
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>&copy; 2019 ACE Consulting Engineers, Inc. All rights reserved.</p>
+  <p>&copy; 2019 Modern Consulting Engineers, Inc. All rights reserved.</p>
   <ul class="nav">
     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
     <li class="nav-item"><a class="nav-link" href="mailto:info@businessdomain.com" >Email</a></li>
@@ -125,5 +120,9 @@
   </ul>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
